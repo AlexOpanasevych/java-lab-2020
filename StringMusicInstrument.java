@@ -1,20 +1,18 @@
-package labs2020Java.lab1.classes;
-
-import javax.print.DocFlavor.STRING;
-
-import classes.MIType;
+package labs2020Java.lab1;
 
 public class StringMusicInstrument extends MusicInstrument {
 
+    public StringMusicInstrument() {
+        setType(MIType.STRING);
+    }
+
     @Override
     public MIType type() {
-        // TODO Auto-generated method stub
-        return MIType.STRING;
+        return super.type();
     }
 
     @Override
     public void play() {
-        // TODO Auto-generated method stub
         super.play();
     }
     

@@ -1,14 +1,18 @@
+package labs2020Java.lab1;
 
 class KeyboardInstrument extends MusicInstrument {
+    
+    public KeyboardInstrument() {
+        setType(MIType.KEYBOARD);
+    }
+
     @Override
     public MIType type() {
-        // TODO Auto-generated method stub
-        return KEYBOARD;
+        return super.type();
     }
 
     @Override
     public void play() {
-        // TODO Auto-generated method stub
         System.out.println("Playing keyboard instrument");
     }
 }

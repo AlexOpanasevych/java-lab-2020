@@ -1,17 +1,15 @@
-package classes;
-
-import classes.MIType;
+package labs2020Java.lab1;
 
 public class MIFactory {
 
-    public MIPart createMI(MIType type) {
+    public MusicInstrument createMI(MIType type) {
         switch (type) {
             case STRING:
                 return new StringMusicInstrument();
-                break;
-        
+            case KEYBOARD:
+                return new KeyboardInstrument();
             default:
-                break;
+                return null;
         }
     }
 

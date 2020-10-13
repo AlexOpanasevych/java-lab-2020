@@ -1,16 +1,23 @@
-import java.util.ArrayList;
-import java.util.Collections;
+package labs2020Java.lab1;
 
-import classes.*;
+import java.util.List;
 
 class MusicInstrument implements Playable {
 
     private MIType type;
 
-    ArrayList<MIPart> parts;
+    List<MIPart> parts;
 
-    public void addPart(MIPart part) {
+    private double totalWeight;
+
+    public double getTotalWeight() {
+        return totalWeight;
+    }
+
+    public MusicInstrument addPart(MIPart part) {
         parts.add(part);
+        totalWeight += part.getWeight();
+        return this;
     }
 
     public void setType(MIType type) {
@@ -25,11 +32,15 @@ class MusicInstrument implements Playable {
         System.out.println("i'm playing");
     }
 
+    public void tune() {
+        System.out.println("tune now");
+    }
+
     public static void main(String[] args) {
-        MIFactory factory = new MIFactory();
-        MusicInstrument mi = factory.createMI(MIType.STRING);
+        MusicInstrument mi = new MusicInstrument();
         mi.setType(MIType.STRING);
-        System.out.println(mi.type());
+        mi.addPart(new Body(3)).addPart(new Tune(1.5));
+        mi.tune();
         mi.play();
     }
 }
