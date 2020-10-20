@@ -27,7 +27,7 @@ class MusicInstrument implements Playable {
     public MIType type() {
         return this.type;
     }
-
+    @Override
     public void play() {
         System.out.println("i'm playing");
     }
