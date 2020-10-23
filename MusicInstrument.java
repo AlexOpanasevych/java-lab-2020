@@ -1,12 +1,15 @@
-package labs2020Java.lab1;
+import java.util.ArrayList;
 
-import java.util.List;
+public class MusicInstrument implements Playable {
 
-class MusicInstrument implements Playable {
+    MusicInstrument(){
+        totalWeight = 0;
+        parts = new ArrayList();      
+    }
 
     private MIType type;
 
-    List<MIPart> parts;
+    ArrayList<MIPart> parts;
 
     private double totalWeight;
 
@@ -34,13 +37,5 @@ class MusicInstrument implements Playable {
 
     public void tune() {
         System.out.println("tune now");
-    }
-
-    public static void main(String[] args) {
-        MusicInstrument mi = new MusicInstrument();
-        mi.setType(MIType.STRING);
-        mi.addPart(new Body(3)).addPart(new Tune(1.5));
-        mi.tune();
-        mi.play();
     }
 }

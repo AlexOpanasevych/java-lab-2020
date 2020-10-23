@@ -1,5 +1,3 @@
-package labs2020Java.lab1;
-
 public class StringMusicInstrument extends MusicInstrument {
 
     public StringMusicInstrument() {

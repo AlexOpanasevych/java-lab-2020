@@ -1,11 +1,10 @@
-package labs2020Java.lab1;
-
 /**
  * Tune
  */
 public class Tune extends MIPart{
 
     public Tune(double weight) {
+        super(weight, MIPartType.METAL);
         setWeight(weight);
     }
 

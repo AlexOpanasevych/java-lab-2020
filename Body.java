@@ -1,8 +1,7 @@
-package labs2020Java.lab1;
-
 public class Body extends MIPart {
     
     Body(double weight) {
+        super(weight, MIPartType.WOOD);
         setWeight(weight);
     }
 

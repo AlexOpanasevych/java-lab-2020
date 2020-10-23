@@ -1,5 +1,3 @@
-package labs2020Java.lab1;
-
 public enum MIType {
     STRING,
     KEYBOARD,

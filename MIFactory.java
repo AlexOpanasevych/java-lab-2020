@@ -1,5 +1,3 @@
-package labs2020Java.lab1;
-
 public class MIFactory {
 
     public MusicInstrument createMI(MIType type) {
