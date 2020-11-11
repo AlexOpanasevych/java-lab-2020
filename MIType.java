@@ -12,7 +12,7 @@ public enum MIType {
         return code;
     }
 
-    public String allTypes() {
+    public static String allTypes() {
         return String.join(", ", STRING.toString(), KEYBOARD.toString(), PERCUSSION.toString(), WOODWIND.toString(), 
         BRASS.toString(), ELECTRIC.toString());
     }

@@ -4,7 +4,7 @@
 public class Tune extends MIPart{
 
     public Tune(double weight) {
-        super(weight, MIPartType.METAL);
+        super(weight, MIPartType.METAL, MIType.KEYBOARD);
         setWeight(weight);
     }
 

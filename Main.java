@@ -17,11 +17,12 @@ public class Main {
         System.out.println("All possible types of music instruments:" + MIType.allTypes());
         while (iterator.hasNext()) {
             MIPart part = iterator.next();
-            System.out.println("Type of part: " + part.type + " weight: " + part.getWeight());
+            System.out.println("Type of part: " + part.partType + " weight: " + part.getWeight());
         }
         keyboard.tune();
         keyboard.play();
 
         MusicInstrument guitar = new StringMusicInstrument();
+        guitar.addPart(new String(1));
     }
 }
