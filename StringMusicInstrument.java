@@ -11,7 +11,12 @@ public class StringMusicInstrument extends MusicInstrument {
 
     @Override
     public void play() {
-        super.play();
+        System.out.println("Playing keyboard instrument");
     }
-    
+
+    public boolean equals(StringMusicInstrument obj) {
+        // bad, i know
+        return this.parts.size() == obj.parts.size();
+    }
+
 }

@@ -1,6 +1,7 @@
 public abstract class MIPart {
     private double weight;    
-    public MIPartType type;
+    public MIPartType partType;
+    protected MIType miType;
     
 
     public double getWeight() {
@@ -11,9 +12,10 @@ public abstract class MIPart {
         this.weight = weight;
     }
 
-    public MIPart(double weight, MIPartType type) {
+    public MIPart(double weight, MIPartType partType, MIType miType) {
         this.weight = weight;
-        this.type = type;
+        this.partType = partType;
+        this.miType = miType;
     }
     
 }

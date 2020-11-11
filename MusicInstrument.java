@@ -4,10 +4,17 @@ public class MusicInstrument implements Playable {
 
     MusicInstrument(){
         totalWeight = 0;
-        parts = new ArrayList();      
+        parts = new ArrayList<>();      
     }
 
-    private MIType type;
+    MusicInstrument(ArrayList<MIPart> parts){
+        totalWeight = 0;
+        parts = new ArrayList<>(parts);
+    }
+
+    protected MIType type;
+
+    private Note note;
 
     ArrayList<MIPart> parts;
 
@@ -18,8 +25,15 @@ public class MusicInstrument implements Playable {
     }
 
     public MusicInstrument addPart(MIPart part) {
-        parts.add(part);
-        totalWeight += part.getWeight();
+        try {
+            if(part.partType.equals(part.partType))
+                throw new IncompatibleMIPartTypeException();
+            parts.add(part);
+            totalWeight += part.getWeight();
+            return this;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         return this;
     }
 
