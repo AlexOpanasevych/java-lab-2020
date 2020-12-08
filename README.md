@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 1 - додав protected field, клас MusicInstrument  
 8 - власний метод в перерахуванні MIPart.allTypes()  
 9 - в Main.main() застосував StringBuilder  
@@ -8,7 +7,3 @@
 13 - застосував у методі MusicInstrument.addPart  
 14 - застосував у методі MusicInstrument.addPart  
 15 - перевизначив StringMusicInstrument.equals  
-=======
-# java-lab-2020
-technicals of programming course 2020 labs
->>>>>>> origin/testbranch-1
