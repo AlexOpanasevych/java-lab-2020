@@ -2,7 +2,7 @@ package musicinstrument.src;
 
 public class Body extends MIPart {
     
-    Body(double weight) {
+    public Body(double weight) {
         super(weight, MIPartType.WOOD, MIType.KEYBOARD);
         setWeight(weight);
     }

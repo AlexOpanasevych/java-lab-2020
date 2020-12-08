@@ -4,7 +4,10 @@ public abstract class MIPart {
     private double weight;    
     public MIPartType partType;
     protected MIType miType;
-    
+
+    public MIType getMiType() {
+        return miType;
+    }
 
     public double getWeight() {
         return weight;

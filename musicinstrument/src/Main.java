@@ -1,10 +1,12 @@
 package musicinstrument.src;
 
+import musicinstrument.src.exceptions.IncompatibleMIPartTypeException;
+
 import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IncompatibleMIPartTypeException {
         
         System.out.println("Please input keyboard parts weights (delimiter ',')");
         Scanner input = new Scanner(System.in);

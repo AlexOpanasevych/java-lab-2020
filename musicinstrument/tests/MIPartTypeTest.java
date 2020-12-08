@@ -2,6 +2,7 @@ package musicinstrument.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import musicinstrument.src.MIPartType;
 import org.junit.Test;
 
 public class MIPartTypeTest {

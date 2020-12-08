@@ -18,7 +18,7 @@ public class StringMusicInstrument extends MusicInstrument {
 
     public boolean equals(StringMusicInstrument obj) {
         // bad, i know
-        return this.parts.size() == obj.parts.size();
+        return this.getParts().size() == obj.getParts().size();
     }
 
 }

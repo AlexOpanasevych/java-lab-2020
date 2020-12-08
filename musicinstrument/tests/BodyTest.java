@@ -2,6 +2,8 @@ package musicinstrument.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import musicinstrument.src.Body;
+import musicinstrument.src.MIPart;
 import org.junit.Test;
 
 public class BodyTest {
